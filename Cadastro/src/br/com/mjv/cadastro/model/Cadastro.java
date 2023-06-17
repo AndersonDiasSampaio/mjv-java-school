@@ -1,5 +1,6 @@
 package br.com.mjv.cadastro.model;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -13,5 +14,99 @@ Long telefone;
 List habilidades;
 Sexo sexo;
 List<Celular> celulars;
+List<Profissao> profissaoLis;
 
+    public Cadastro(Integer id, String nome, String cpf, String email,
+                    Date dataNascimento, Long telefone, List habilidades, Sexo sexo) {
+        this.id = id;
+        this.nome = nome;
+        this.cpf = cpf;
+        this.email = email;
+        this.dataNascimento = dataNascimento;
+        this.telefone = telefone;
+        this.habilidades = habilidades;
+        this.sexo = sexo;
+        this. celulars = new ArrayList<>();
+        this.profissaoLis= new ArrayList<>();
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Date getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(Date dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
+
+    public Long getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(Long telefone) {
+        this.telefone = telefone;
+    }
+
+    public List getHabilidades() {
+        return habilidades;
+    }
+
+    public void setHabilidades(String habilidades) {
+        this.habilidades.add(habilidades) ;
+    }
+
+    public Sexo getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(Sexo sexo) {
+        this.sexo = sexo;
+    }
+
+    public List<Celular> getCelulars() {
+        return celulars;
+    }
+
+    public void setCelulars(Celular celulars) {
+        this.celulars.add(celulars);
+    }
+
+    public List<Profissao> getProfissaoLis() {
+        return profissaoLis;
+    }
+
+    public void setProfissaoLis(Profissao profissaoLis) {
+        this.profissaoLis.add(profissaoLis);
+    }
 }

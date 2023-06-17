@@ -3,10 +3,20 @@ package br.com.mjv.cadastro.model;
 public class Profissao {
     Integer id;
     String nome;
+    CadastroExperiencia cadastroExperiencia;
 
-    public Profissao(Integer id, String nome) {
+    public Profissao(Integer id, String nome, CadastroExperiencia cadastroExperiencia) {
         this.id = id;
         this.nome = nome;
+        this.cadastroExperiencia = cadastroExperiencia;
+    }
+
+    public CadastroExperiencia getCadastroExperiencia() {
+        return cadastroExperiencia;
+    }
+
+    public void setCadastroExperiencia(CadastroExperiencia cadastroExperiencia) {
+        this.cadastroExperiencia = cadastroExperiencia;
     }
 
     public Integer getId() {

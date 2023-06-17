@@ -1,8 +1,13 @@
 package br.com.mjv.cadastro.model;
 
-public class Profissão {
+public class Empresa {
     Integer id;
     String nome;
+
+    public Empresa(Integer id, String nome) {
+        this.id = id;
+        this.nome = nome;
+    }
 
     public Integer getId() {
         return id;
