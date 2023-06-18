@@ -69,6 +69,7 @@ public class CsvGenerator {
                 conteudo.append(cadastro.getHabilidades() + ";");
                 conteudo.append(cadastro.getPretencaoSalarial().getValorMaximo() + ";");
                 conteudo.append(cadastro.getPretencaoSalarial().getValorMinimo() + ";");
+                conteudo.append("\n");
 
 
             }

@@ -32,14 +32,20 @@ public class Main {
         Cidade cidade = new Cidade(1, "Maceio", "Alagoas", "Al");
         Endereco endereco = new Endereco(57800000L, "987A", "Praca", "Centro", cidade);
         Cadastro cadastro = new Cadastro(1, "Anderson", "09339394429", "anderson.dias@gmail.com", dataNascimento, 827646562121L, "enforçado, rápido", sexo, pretencaoSalarial, endereco);
+        Cadastro cadastro2 = new Cadastro(1, "Marcos", "093393944478996", "anderson.dias@gmail.com", dataNascimento, 827646562121L, "enforçado, rápido", sexo, pretencaoSalarial, endereco);
+
         cadastro.setCelulars(celular1);
         cadastro.setCelulars(celular);
         cadastro.setProfissaoLis(profissao);
+        cadastro2.setCelulars(celular1);
+        cadastro2.setCelulars(celular);
+        cadastro2.setProfissaoLis(profissao);
         System.out.println(cadastro);
 
 
         List<Cadastro> cadastros = new ArrayList<>();
         cadastros.add(cadastro);
+        cadastros.add(cadastro2);
 
         CsvGenerator csvGenerator = new CsvGenerator();
         csvGenerator.escreverLayoutDelimitado(cadastros);
