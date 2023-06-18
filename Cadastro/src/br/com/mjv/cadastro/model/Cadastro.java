@@ -1,5 +1,6 @@
 package br.com.mjv.cadastro.model;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -9,7 +10,7 @@ Integer id;
 String nome;
 String cpf;
 String email;
-Date dataNascimento;
+    LocalDate dataNascimento;
 Long telefone;
 String habilidades;
 Sexo sexo;
@@ -19,7 +20,7 @@ List<Celular> celulars;
 List<Profissao> profissaoLis;
 
     public Cadastro(Integer id, String nome, String cpf, String email,
-                    Date dataNascimento, Long telefone, String habilidades, Sexo sexo, PretencaoSalarial pretencaoSalarial, Endereco endereco) {
+                    LocalDate dataNascimento, Long telefone, String habilidades, Sexo sexo, PretencaoSalarial pretencaoSalarial, Endereco endereco) {
         this.id = id;
         this.nome = nome;
         this.cpf = cpf;
@@ -84,11 +85,11 @@ List<Profissao> profissaoLis;
         this.email = email;
     }
 
-    public Date getDataNascimento() {
+    public LocalDate getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(Date dataNascimento) {
+    public void setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 

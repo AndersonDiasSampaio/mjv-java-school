@@ -1,18 +1,19 @@
 package br.com.mjv.cadastro.model;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class CadastroExperiencia {
     Integer id;
     Double salario;
     boolean empregoAtual;
-    Date dataContratacao;
+    LocalDate dataContratacao;
     Date datDesligamento;
     RegimeDeContratacaoENUM regimeDeContratacaoENUM;
     Empresa empresa;
 
     public CadastroExperiencia(Integer id, Double salario, boolean empregoAtual,
-                               Date dataContratacao, Date datDesligamento,
+                               LocalDate dataContratacao, Date datDesligamento,
                                RegimeDeContratacaoENUM regimeDeContratacaoENUM, Empresa empresa) {
         this.id = id;
         this.salario = salario;
@@ -47,11 +48,11 @@ public class CadastroExperiencia {
         this.empregoAtual = empregoAtual;
     }
 
-    public Date getDataContratacao() {
+    public LocalDate getDataContratacao() {
         return dataContratacao;
     }
 
-    public void setDataContratacao(Date dataContratacao) {
+    public void setDataContratacao(LocalDate dataContratacao) {
         this.dataContratacao = dataContratacao;
     }
 
