@@ -45,4 +45,14 @@ public class Celular {
     public void setPessoal(boolean pessoal) {
         this.pessoal = pessoal;
     }
+
+    @Override
+    public String toString() {
+        return "Celular{" +
+                "numero=" + numero +
+                ", whatsapp=" + whatsapp +
+                ", profissional=" + profissional +
+                ", pessoal=" + pessoal +
+                '}';
+    }
 }

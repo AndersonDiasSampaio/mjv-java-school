@@ -34,4 +34,13 @@ public class Profissao {
     public void setNome(String nome) {
         this.nome = nome;
     }
+
+    @Override
+    public String toString() {
+        return "Profissao{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", cadastroExperiencia=" + cadastroExperiencia +
+                '}';
+    }
 }

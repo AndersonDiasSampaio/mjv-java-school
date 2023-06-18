@@ -8,7 +8,7 @@ public class Endereco {
     String bairro;
     Cidade cidade;
 
-    public Endereco(Long cep, String logradouro, String numero, String complemento, String bairro, Cidade cidade) {
+    public Endereco(Long cep, String logradouro, String numero, String complemento, Cidade cidade) {
         this.cep = cep;
         this.logradouro = logradouro;
         this.numero = numero;
@@ -64,5 +64,17 @@ public class Endereco {
 
     public void setCidade(Cidade cidade) {
         this.cidade = cidade;
+    }
+
+    @Override
+    public String toString() {
+        return "Endereco{" +
+                "cep=" + cep +
+                ", logradouro='" + logradouro + '\'' +
+                ", numero='" + numero + '\'' +
+                ", complemento='" + complemento + '\'' +
+                ", bairro='" + bairro + '\'' +
+                ", cidade=" + cidade +
+                '}';
     }
 }

@@ -44,4 +44,14 @@ public class Cidade {
         this.estado = estado;
         this.singla = singla;
     }
+
+    @Override
+    public String toString() {
+        return "Cidade{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", estado='" + estado + '\'' +
+                ", singla='" + singla + '\'' +
+                '}';
+    }
 }

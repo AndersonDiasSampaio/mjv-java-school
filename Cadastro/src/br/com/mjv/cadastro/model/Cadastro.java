@@ -11,13 +11,15 @@ String cpf;
 String email;
 Date dataNascimento;
 Long telefone;
-List habilidades;
+String habilidades;
 Sexo sexo;
+PretencaoSalarial pretencaoSalarial;
+Endereco endereco;
 List<Celular> celulars;
 List<Profissao> profissaoLis;
 
     public Cadastro(Integer id, String nome, String cpf, String email,
-                    Date dataNascimento, Long telefone, List habilidades, Sexo sexo) {
+                    Date dataNascimento, Long telefone, String habilidades, Sexo sexo, PretencaoSalarial pretencaoSalarial, Endereco endereco) {
         this.id = id;
         this.nome = nome;
         this.cpf = cpf;
@@ -26,8 +28,28 @@ List<Profissao> profissaoLis;
         this.telefone = telefone;
         this.habilidades = habilidades;
         this.sexo = sexo;
+        this.pretencaoSalarial=pretencaoSalarial;
+        this.endereco=endereco;
         this. celulars = new ArrayList<>();
         this.profissaoLis= new ArrayList<>();
+
+
+    }
+
+    public PretencaoSalarial getPretencaoSalarial() {
+        return pretencaoSalarial;
+    }
+
+    public void setPretencaoSalarial(PretencaoSalarial pretencaoSalarial) {
+        this.pretencaoSalarial = pretencaoSalarial;
+    }
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
     }
 
     public Integer getId() {
@@ -78,12 +100,12 @@ List<Profissao> profissaoLis;
         this.telefone = telefone;
     }
 
-    public List getHabilidades() {
+    public String getHabilidades() {
         return habilidades;
     }
 
     public void setHabilidades(String habilidades) {
-        this.habilidades.add(habilidades) ;
+        this.habilidades = habilidades;
     }
 
     public Sexo getSexo() {
@@ -108,5 +130,23 @@ List<Profissao> profissaoLis;
 
     public void setProfissaoLis(Profissao profissaoLis) {
         this.profissaoLis.add(profissaoLis);
+    }
+
+    @Override
+    public String toString() {
+        return "Cadastro{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", email='" + email + '\'' +
+                ", dataNascimento=" + dataNascimento +
+                ", telefone=" + telefone +
+                ", habilidades='" + habilidades + '\'' +
+                ", sexo=" + sexo +
+                ", pretencaoSalarial=" + pretencaoSalarial +
+                ", endereco=" + endereco +
+                ", celulars=" + celulars +
+                ", profissaoLis=" + profissaoLis +
+                '}';
     }
 }

@@ -24,4 +24,12 @@ public class PretencaoSalarial {
     public void setValorMaximo(Double valorMaximo) {
         this.valorMaximo = valorMaximo;
     }
+
+    @Override
+    public String toString() {
+        return "PretencaoSalarial{" +
+                "valorMinimo=" + valorMinimo +
+                ", valorMaximo=" + valorMaximo +
+                '}';
+    }
 }

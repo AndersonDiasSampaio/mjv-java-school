@@ -78,4 +78,17 @@ public class CadastroExperiencia {
     public void setEmpresa(Empresa empresa) {
         this.empresa = empresa;
     }
+
+    @Override
+    public String toString() {
+        return "CadastroExperiencia{" +
+                "id=" + id +
+                ", salario=" + salario +
+                ", empregoAtual=" + empregoAtual +
+                ", dataContratacao=" + dataContratacao +
+                ", datDesligamento=" + datDesligamento +
+                ", regimeDeContratacaoENUM=" + regimeDeContratacaoENUM +
+                ", empresa=" + empresa +
+                '}';
+    }
 }
