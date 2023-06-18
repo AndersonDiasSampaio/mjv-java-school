@@ -9,9 +9,9 @@ public class Celular {
 
     public Celular(Long numero, boolean whatsapp, boolean profissional, boolean pessoal) {
         this.numero = numero;
-        this.whatsapp = false;
-        this.profissional = false;
-        this.pessoal = false;
+        this.whatsapp = whatsapp;
+        this.profissional = profissional;
+        this.pessoal = pessoal;
     }
 
     public Long getNumero() {
