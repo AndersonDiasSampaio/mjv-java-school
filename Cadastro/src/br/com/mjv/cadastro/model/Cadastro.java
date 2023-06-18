@@ -1,8 +1,9 @@
 package br.com.mjv.cadastro.model;
 
+import br.com.mjv.cadastro.model.ENUMS.SexoENUM;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class Cadastro {
@@ -13,14 +14,14 @@ String email;
     LocalDate dataNascimento;
 Long telefone;
 String habilidades;
-Sexo sexo;
+SexoENUM sexo;
 PretencaoSalarial pretencaoSalarial;
 Endereco endereco;
 List<Celular> celulars;
 List<Profissao> profissaoLis;
 
     public Cadastro(Integer id, String nome, String cpf, String email,
-                    LocalDate dataNascimento, Long telefone, String habilidades, Sexo sexo, PretencaoSalarial pretencaoSalarial, Endereco endereco) {
+                    LocalDate dataNascimento, Long telefone, String habilidades, SexoENUM sexo, PretencaoSalarial pretencaoSalarial, Endereco endereco) {
         this.id = id;
         this.nome = nome;
         this.cpf = cpf;
@@ -109,11 +110,11 @@ List<Profissao> profissaoLis;
         this.habilidades = habilidades;
     }
 
-    public Sexo getSexo() {
+    public SexoENUM getSexo() {
         return sexo;
     }
 
-    public void setSexo(Sexo sexo) {
+    public void setSexo(SexoENUM sexo) {
         this.sexo = sexo;
     }
 

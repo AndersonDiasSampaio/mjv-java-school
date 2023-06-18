@@ -1,12 +1,11 @@
 import br.com.mjv.cadastro.engine.CsvGenerator;
 import br.com.mjv.cadastro.model.*;
+import br.com.mjv.cadastro.model.ENUMS.RegimeDeContratacaoENUM;
+import br.com.mjv.cadastro.model.ENUMS.SexoENUM;
 
 
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
@@ -15,7 +14,7 @@ public class Main {
 
 
     public static void main(String[] args) {
-        Sexo sexo = Sexo.MASCULINO;
+        SexoENUM sexo = SexoENUM.MASCULINO;
         RegimeDeContratacaoENUM regimeDeContratacao = RegimeDeContratacaoENUM.CLT;
         CadastroExperiencia cadastroExperiencia;
         Empresa empresa = new Empresa(20, "Control");

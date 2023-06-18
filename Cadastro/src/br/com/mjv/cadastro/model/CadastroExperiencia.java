@@ -1,5 +1,7 @@
 package br.com.mjv.cadastro.model;
 
+import br.com.mjv.cadastro.model.ENUMS.RegimeDeContratacaoENUM;
+
 import java.time.LocalDate;
 import java.util.Date;
 
