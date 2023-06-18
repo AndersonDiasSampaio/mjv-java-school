@@ -13,7 +13,6 @@ import java.util.List;
 
 public class CsvGenerator {
     public static void escreverLayoutDelimitado(List<Cadastro> cadastros) {
-        System.out.println("***** - LAYOUT DELIMITADO - *****");
 
         try {
             StringBuilder conteudo = new StringBuilder();
@@ -73,7 +72,6 @@ public class CsvGenerator {
 
 
             }
-            System.out.println(conteudo.toString());
 
             Path arquivoDestino = Paths.get("D:\\cadastros.csv");
 

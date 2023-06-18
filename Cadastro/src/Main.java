@@ -23,9 +23,9 @@ public class Main {
         LocalDate dataNascimento = LocalDate.of(1980, 05, 17);
 
 
-        System.out.println(cadastroExperiencia);
+      //  System.out.println(cadastroExperiencia);
         Profissao profissao = new Profissao(1, "pedreiro", cadastroExperiencia);
-        System.out.println(profissao);
+       // System.out.println(profissao);
         PretencaoSalarial pretencaoSalarial = new PretencaoSalarial(2600d, 3500d);
         Celular celular = new Celular(8297894564L, true, true, false);
         Celular celular1 = new Celular(875464632l, true, true, true);
