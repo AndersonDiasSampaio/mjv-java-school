@@ -15,8 +15,9 @@ public class ImpressorCupom {
         conteudo.append(tracos());
         conteudo.append(cupom.nomeFantasia + "\n"); //preencher com espaços até ter 50 caracteres de comprimento
         Endereco end = cupom.endereco;
+
         conteudo.append(end.logradouro + String.format(" N. %s %s %s %s-%s \n",end.numero, end.complemento, end.bairro, end.cidade, end.uf)); //como formatar vários campos
-        conteudo.append(String.format("CPF/CNPJ: %11s %tD \n",cupom.cpf, cupom.data ));//calcular os respectivos comprimentos e aplicar alinhamento
+        conteudo.append(String.format("CPF/CNPJ: %11s %tD \n",cpfCnpj(cupom.cpf), cupom.data ));//calcular os respectivos comprimentos e aplicar alinhamento
         conteudo.append(String.format("IE: %s%02d:%02d:%02d \n",cupom.ie,cupom.hora.getHour(), cupom.hora.getMinute(), cupom.hora.getSecond()));//calcular os respectivos comprimentos e aplicar alinhamento
         conteudo.append(String.format("IM: %s  CCF:%s \n" , cupom.im ,cupom.ccf) );//calcular os respectivos comprimentos e aplicar alinhamento
         conteudo.append(String.format("CDD: %d \n", cupom.cdd));//aplicar alinhamento à direita
